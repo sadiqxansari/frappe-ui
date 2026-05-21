@@ -41,7 +41,7 @@ const { frontmatter } = useData()
               />
               <PrevNextBtns />
             </main>
-            <OnThisPage />
+            <OnThisPage v-if="frontmatter.outline !== false" />
           </div>
         </div>
       </div>

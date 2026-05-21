@@ -42,13 +42,13 @@ export function getSidebarList(componentList: string[]): SidebarSection[] {
       ],
     },
     {
-      text: 'Design System',
+      text: 'Foundations',
       items: [
-        { text: 'Background Color', link: '/docs/design-system/background-color' },
-        { text: 'Text Design', link: '/docs/design-system/text' },
-        { text: 'Border Color', link: '/docs/design-system/border-color' },
-        { text: 'Drop Shadow', link: '/docs/design-system/drop-shadow' },
-        { text: 'Border Radius', link: '/docs/design-system/border-radius' },
+        { text: 'Colours — Base', link: '/docs/foundations/colours/base' },
+        { text: 'Colours — Semantic', link: '/docs/foundations/colours/semantic' },
+        { text: 'Typography', link: '/docs/foundations/typography' },
+        { text: 'Corner Radius', link: '/docs/foundations/corner-radius' },
+        { text: 'Drop Shadow', link: '/docs/foundations/drop-shadow' },
       ],
     },
     {
