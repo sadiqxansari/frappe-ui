@@ -142,10 +142,10 @@ const buttonClasses = computed(() => {
   }[props.theme]
 
   let focusClasses = {
-    gray: 'focus-visible:ring focus-visible:ring-outline-gray-3',
-    blue: 'focus-visible:ring focus-visible:ring-blue-400',
-    green: 'focus-visible:ring focus-visible:ring-outline-green-2',
-    red: 'focus-visible:ring focus-visible:ring-outline-red-2',
+    gray: 'focus-visible:ring-2 focus-visible:ring-outline-gray-3',
+    blue: 'focus-visible:ring-2 focus-visible:ring-blue-400',
+    green: 'focus-visible:ring-2 focus-visible:ring-outline-green-2',
+    red: 'focus-visible:ring-2 focus-visible:ring-outline-red-2',
   }[props.theme]
 
   let variantClasses = {
@@ -185,20 +185,20 @@ const buttonClasses = computed(() => {
   let disabledClasses = disabledClassesMap[themeVariant]
 
   let sizeClasses = {
-    sm: 'h-7 text-base px-2 rounded',
-    md: 'h-8 text-base font-medium px-2.5 rounded',
-    lg: 'h-10 text-lg font-medium px-3 rounded-md',
-    xl: 'h-11.5 text-xl font-medium px-3.5 rounded-lg',
-    '2xl': 'h-13 text-2xl font-medium px-3.5 rounded-xl',
+    sm: 'h-7 text-base px-2 rounded-4',
+    md: 'h-8 text-base-medium px-2.5 rounded-4',
+    lg: 'h-10 text-lg-medium px-3 rounded-5',
+    xl: 'h-11.5 text-xl font-medium px-3.5 rounded-6',
+    '2xl': 'h-13 text-2xl font-medium px-3.5 rounded-7',
   }[props.size]
 
   if (isIconButton.value) {
     sizeClasses = {
-      sm: 'h-7 w-7 rounded',
-      md: 'h-8 w-8 rounded',
-      lg: 'h-10 w-10 rounded-md',
-      xl: 'h-11.5 w-11.5 rounded-lg',
-      '2xl': 'h-13 w-13 rounded-xl',
+      sm: 'h-7 w-7 rounded-4',
+      md: 'h-8 w-8 rounded-4',
+      lg: 'h-10 w-10 rounded-5',
+      xl: 'h-11.5 w-11.5 rounded-6',
+      '2xl': 'h-13 w-13 rounded-7',
     }[props.size]
   }
 
