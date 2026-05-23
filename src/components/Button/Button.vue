@@ -12,6 +12,7 @@
       <LoadingIndicator
         v-if="loading"
         :class="{
+          'h-2.5 w-2.5': size == 'xs',
           'h-3 w-3': size == 'sm',
           'h-[13.5px] w-[13.5px]': size == 'md',
           'h-[15px] w-[15px]': size == 'lg',
@@ -185,6 +186,7 @@ const buttonClasses = computed(() => {
   let disabledClasses = disabledClassesMap[themeVariant]
 
   let sizeClasses = {
+    xs: 'h-6 text-xs px-1.5 rounded-3',
     sm: 'h-7 text-base px-2 rounded-4',
     md: 'h-8 text-base-medium px-2.5 rounded-4',
     lg: 'h-10 text-lg-medium px-3 rounded-5',
@@ -194,6 +196,7 @@ const buttonClasses = computed(() => {
 
   if (isIconButton.value) {
     sizeClasses = {
+      xs: 'h-6 w-6 rounded-3',
       sm: 'h-7 w-7 rounded-4',
       md: 'h-8 w-8 rounded-4',
       lg: 'h-10 w-10 rounded-5',
@@ -212,6 +215,7 @@ const buttonClasses = computed(() => {
 
 const slotClasses = computed(() => {
   let classes = {
+    xs: 'h-3.5',
     sm: 'h-4',
     md: 'h-4.5',
     lg: 'h-5',
@@ -224,6 +228,7 @@ const slotClasses = computed(() => {
 
 const lucideSlotClasses = computed(() => {
   return {
+    xs: 'size-3.5',
     sm: 'size-4',
     md: 'size-4.5',
     lg: 'size-5',
